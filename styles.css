@@ -5,8 +5,29 @@
     padding: 0;
 } */
 
-nav {
-    width: 100%
+.banner {
+    width: 900px;
+    height: 150px;
+}
+
+.featured {
+    padding-top: 20rem;
+    text-align: center;
+}
+
+.main-content {
+    padding-top: 45rem;
+    padding-right: 15rem;
+    padding-left: 15rem;
+    /* Adjust this value according to the height of your navigation bar */
+}
+
+.header {
+    text-align: center;
+}
+
+.article {
+    padding-top: 3rem;
 }
 
 body {

@@ -19,55 +19,215 @@
         integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
         crossorigin="anonymous"></script>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #086390;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="Assets/noName_WW.png" alt="noName_WW" height="80px">
-                Weather Whiz
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="locationForcast.html">location Forcast</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="shop.html">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="locationForcast.html">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
+    <div>
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #086390;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Assets/noName_WW.png" alt="noName_WW" height="80px">
+                    Weather Whiz
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locationForcast.html">Location Forecast</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locationForcast.html">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+        <div class="main-content">
+            <div class="featured">
+                <h3>Featured Locations</h3>
+                <!-- data-bs-ride="carousel" -->
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Assets/New_York_City_skyline_banner.jpeg" class="banner" alt="logo1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>New York</h1>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/Las_Vegas_banner.png" class="banner" alt="test">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Las Vegas</h1>
+                            </div>
+                        </div>
+                        <div class=" carousel-item">
+                            <img src="Assets/San_diego_skyline_banner.png" class="banner" alt="test">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>San Diego</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="article">
+                <header class="header">
+                    <h1>Weather Whiz: A Useful Tool for Everyday Consumers, Born from the Passion of College
+                        Students
+                    </h1>
+                </header>
+                <img src="Assets/noName_WW.png" alt="testimg" width="100px" style="display: block; margin: 0 auto;">
+
+                <main>
+                    <section>
+                        <h2>Introduction</h2>
+                        <p>In today's fast-paced world, having access to accurate and up-to-date weather information
+                            is
+                            essential for both personal and professional reasons. From planning outdoor activities
+                            to
+                            scheduling
+                            travel or simply dressing appropriately for the day, weather forecasts play a crucial
+                            role
+                            in
+                            our
+                            everyday lives. This is where Weather Whiz, an innovative weather website, comes into
+                            the
+                            picture.
+                            Founded by a group of college students with a shared dream of traveling the world,
+                            Weather
+                            Whiz
+                            has
+                            become an indispensable tool for everyday consumers.</p>
+                    </section>
+
+                    <section>
+                        <h2>The College Students' Dream</h2>
+                        <p>The story of Weather Whiz began with a group of college friends who all shared a passion
+                            for
+                            exploration and adventure. They dreamt of traveling the globe, experiencing new
+                            cultures,
+                            and
+                            creating unforgettable memories. However, they realized that embarking on such an
+                            ambitious
+                            journey
+                            required meticulous planning, and weather was a significant factor that could not be
+                            overlooked.
+                        </p>
+
+                        <p>As they researched their destinations, they quickly discovered that many existing weather
+                            websites
+                            lacked the user-friendly design, detailed forecasts, and engaging content they desired.
+                            Driven
+                            by
+                            their passion for travel and a determination to create a better tool for fellow
+                            adventurers,
+                            these
+                            college students set out to develop a weather website that would not only provide
+                            accurate
+                            forecasts
+                            but also inspire and educate its users.</p>
+                    </section>
+
+                    <section>
+                        <h2>A Website for Everyday Consumers</h2>
+                        <p>Weather Whiz was designed with everyday consumers in mind. The founders understood that
+                            weather
+                            information is not just for travelers or outdoor enthusiasts, but a crucial part of
+                            daily
+                            life
+                            for
+                            people from all walks of life. Whether you're a parent planning a weekend picnic, a
+                            commuter
+                            deciding whether to bring an umbrella, or a farmer monitoring growing conditions,
+                            Weather
+                            Whiz
+                            aims
+                            to provide accurate, timely, and easy-to-understand forecasts to help you make informed
+                            decisions.
+                        </p>
+
+                        <p>The website offers a range of features, including:</p>
+                        <ol>
+                            <li>Current weather conditions and detailed forecasts for locations worldwide.</li>
+                            <li>Interactive maps that provide a visual representation of weather patterns, making it
+                                easier
+                                for
+                                users to grasp complex meteorological data.</li>
+                            <li>Weather-related news articles, tips, and trivia that keep users engaged and informed
+                                about
+                                the
+                                world around them.</li>
+                            <li>A user-friendly interface that ensures seamless navigation and an enjoyable browsing
+                                experience.
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                        </ol>
+                    </section>
+
+                    <section>
+                        <h2>Inspiring a Community</h2>
+                        <p>Weather Whiz has evolved beyond a simple weather forecasting tool and become a platform
+                            that
+                            fosters
+                            a sense of community among its users. The founders' passion for travel and adventure has
+                            inspired a
+                            growing audience of like-minded individuals who appreciate the power of accurate weather
+                            information
+                            and the opportunities it presents.</p>
+
+                        <p>The college students behind Weather Whiz continue to innovate and improve the website,
+                            driven
+                            by
+                            their commitment to helping others achieve their dreams and enjoy life to </p>
+                    </section>
+                </main>
             </div>
         </div>
-    </nav>
-
-
+    </div>
 </body>
 
 </html>
