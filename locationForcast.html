@@ -12,6 +12,7 @@
 
 
 <body>
+    <h1>Weather Forecast</h1>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
@@ -19,12 +20,9 @@
         integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
         crossorigin="anonymous"></script>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #086390;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="Assets/noName_WW.png" alt="noName_WW" height="80px">
-                Weather Whiz
-            </a>
+            <a class="navbar-brand" href="index.html">Weather Whiz</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -36,13 +34,7 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="locationForcast.html">location Forcast</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="shop.html">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="locationForcast.html">Pricing</a>
+                        <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -58,6 +50,9 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -66,8 +61,14 @@
             </div>
         </div>
     </nav>
-
-
+    <form id="location-form" class="location-form">
+        <input type="text" id="location-input" placeholder="Enter location" required>
+        <button type="submit">Search</button>
+    </form>
+    <div id="weather-container">
+        <!-- Weather data will be populated here -->
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
