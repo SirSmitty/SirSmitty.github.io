@@ -16,10 +16,16 @@
 }
 
 .main-content {
-    padding-top: 45rem;
+    padding-top: 72rem;
     padding-right: 15rem;
     padding-left: 15rem;
     /* Adjust this value according to the height of your navigation bar */
+}
+
+.map {
+    padding-top: 10rem;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .header {

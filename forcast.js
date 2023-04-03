@@ -65,5 +65,6 @@ function displayWeatherForecast(forecastData) {
     });
 }
 
+
 // Call the function with a default location when the page loads
 getWeatherForLocation('New York');
