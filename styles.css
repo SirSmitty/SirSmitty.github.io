@@ -1,29 +1,26 @@
-/* General styles */
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} */
-
+/* dimensions of featureed city bar */
 .banner {
     width: 900px;
     height: 150px;
 }
 
+/* featured city bat on top */
 .featured {
-    padding-top: 20rem;
+    padding-top: 25rem;
     text-align: center;
 }
 
+/* used to house all main page content */
 .main-content {
-    padding-top: 72rem;
+    padding-top: 74rem;
     padding-right: 15rem;
     padding-left: 15rem;
-    /* Adjust this value according to the height of your navigation bar */
+    background-color: rgb(244, 227, 206);
 }
 
+/* for the map on front page */
 .map {
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-left: 8px;
     padding-right: 8px;
 }
