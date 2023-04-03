@@ -6,13 +6,13 @@
 
 /* featured city bat on top */
 .featured {
-    padding-top: 25rem;
+    padding-top: 20%;
     text-align: center;
 }
 
 /* used to house all main page content */
 .main-content {
-    padding-top: 74rem;
+    padding-top: 80rem;
     padding-right: 15rem;
     padding-left: 15rem;
     background-color: rgb(244, 227, 206);
@@ -20,12 +20,17 @@
 
 /* for the map on front page */
 .map {
-    padding-top: 8rem;
+    /* padding-top: 8rem; */
     padding-left: 8px;
     padding-right: 8px;
 }
 
 .header {
+    text-align: center;
+}
+
+.locationHeader {
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -44,11 +49,26 @@ body {
     width: 100%;
 }
 
+.pricingBody {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    height: 100vh;
+    width: 100%;
+}
+
+
 h1 {
     color: #333;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
+}
+
+.pricing-page {
+    padding-left: '1px';
+    padding-right: '1px';
 }
 
 /* Weather container styles */

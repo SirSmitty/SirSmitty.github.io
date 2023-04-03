@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        L.tileLayer(`https://{s}.tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid={apiKey}`, {
+        L.tileLayer(`https://{s}.tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid={apiKey}`, {
             attribution: 'Map data &copy; <a href="https://www.openweathermap.org/">OpenWeatherMap</a>',
             maxZoom: 18,
-            id: 'openweathermap.temp_new',
+            id: 'openweathermap.precipitation_new',
             tileSize: 512,
             zoomOffset: -1,
             apiKey: apiKey
