@@ -22,7 +22,7 @@
         crossorigin="anonymous"></script>
     <!-- Navigation -->
     <div>
-        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #3d7d9d;">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #3d7d9d;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.php">
                     <img src="Assets/noName_WW.png" alt="noName_WW" height="80px">
@@ -47,29 +47,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="pricing.html">Pricing</a>
                         </li>
-                    </ul>
-
-                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <?php
-                            session_start();
-                            if (isset($_SESSION['username'])) {
-                                echo "Welcome, " . $_SESSION['username'];
-                                ?>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="logout.php">Sign Out</a>
-                                        </li>
-                                        <?php
-                            } else {
-                                ?>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="login.html">Login</a>
-                                        </li>
-                                        <?php
-                            }
-                            ?>
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+
+                        </li>
                     </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
