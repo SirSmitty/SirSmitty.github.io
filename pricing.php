@@ -38,10 +38,10 @@
                             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="locationForcast.html">Location Forecast</a>
+                            <a class="nav-link" href="locationForcast.php">Location Forecast</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">Pricing</a>
+                            <a class="nav-link" href="pricing.php">Pricing</a>
                         </li>
                     </ul>
 
