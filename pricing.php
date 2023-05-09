@@ -41,21 +41,31 @@
                             <a class="nav-link" href="locationForcast.html">Location Forecast</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="pricing.html">Pricing</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-
-                        </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <?php
+                            session_start();
+                            if (isset($_SESSION['username'])) {
+                                echo "Welcome, " . $_SESSION['username'];
+                                ?>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="logout.php">Sign Out</a>
+                                    </li>
+                                    <?php
+                            } else {
+                                ?>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="login.html">Login</a>
+                                    </li>
+                                    <?php
+                            }
+                            ?>
+                    </ul>
                 </div>
             </div>
         </nav>

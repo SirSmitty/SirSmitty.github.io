@@ -42,9 +42,6 @@
                             <a class="nav-link" href="locationForcast.html">Location Forecast</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="pricing.html">Pricing</a>
                         </li>
                         <li class="nav-item">
@@ -53,11 +50,11 @@
                             if (isset($_SESSION['username'])) {
                                 echo "Welcome, " . $_SESSION['username'];
                                 ?>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="logout.php">Sign Out</a>
-                                                </li>
-                                                <?php
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="logout.php">Sign Out</a>
+                                                        </li>
+                                                        <?php
                             } else {
                                 ?>
                                                 <li class="nav-item">
