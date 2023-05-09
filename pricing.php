@@ -23,7 +23,7 @@
     <div class="pb-5">
         <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #3d7d9d;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <img src="Assets/noName_WW.png" alt="noName_WW" height="80px">
                     Weather Whiz
                 </a>
@@ -35,27 +35,37 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="locationForcast.html">Location Forecast</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="pricing.html">Pricing</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-
-                        </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <?php
+                            session_start();
+                            if (isset($_SESSION['username'])) {
+                                echo "Welcome, " . $_SESSION['username'];
+                                ?>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="logout.php">Sign Out</a>
+                                    </li>
+                                    <?php
+                            } else {
+                                ?>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="login.html">Login</a>
+                                    </li>
+                                    <?php
+                            }
+                            ?>
+                    </ul>
                 </div>
             </div>
         </nav>

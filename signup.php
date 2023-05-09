@@ -26,7 +26,7 @@ $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 $sql = "INSERT INTO profiles (username, password, email, city) VALUES ('$username', '$hashed_password', '$email', '$city')";
 
 if ($conn->query($sql) === TRUE) {
-    header('Location: index.html');
+    header('Location: index.php');
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
