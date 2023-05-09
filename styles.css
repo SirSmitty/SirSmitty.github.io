@@ -12,7 +12,11 @@
 
 /* used to house all main page content */
 .main-content {
+<<<<<<< HEAD
     padding-top: 85rem;
+=======
+    padding-top: 45rem;
+>>>>>>> ed40e44a2ea3091e52a6c310aec55d36e9e3a7ad
     padding-right: 15rem;
     padding-left: 15rem;
     background-color: rgb(244, 227, 206);
