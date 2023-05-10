@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 </head>
 
 
@@ -23,54 +25,48 @@
     <!-- Navigation -->
     <div>
     <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #3d7d9d;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">
-                    <img src="Assets/noName_WW.png" alt="noName_WW" height="80px">
-                    Weather Whiz
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="locationForcast.html">Location Forecast</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <?php
-                            session_start();
-                            if (isset($_SESSION['username'])) {
-                                echo "Welcome, " . $_SESSION['username'];
-                                ?>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="logout.php">Sign Out</a>
-                                                        </li>
-                                                        <?php
-                            } else {
-                                ?>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="login.html">Login</a>
-                                                </li>
-                                                <?php
-                            }
-                            ?>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.php">
+            <img src="Assets/noName_WW.png" alt="noName_WW" height="80px">
+            Weather Whiz
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="locationForcast.html">Location Forecast</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <?php
+                session_start();
+                if (isset($_SESSION['username'])) {
+                    echo '<li class="nav-item">
+                            <span class="nav-link">Welcome, ' . $_SESSION['username'] . '</span>
+                          </li>';
+                    echo '<li class="nav-item">
+                            <a class="nav-link" href="logout.php">Sign Out</a>
+                          </li>';
+                } else {
+                    echo '<li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                          </li>';
+                }
+                ?>
+            </ul>
+        </div>
+    </div>
+</nav>
     </div>
     <div>
         <div class="main-content">

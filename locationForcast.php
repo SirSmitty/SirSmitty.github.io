@@ -38,10 +38,10 @@
                             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="locationForcast.html">Location Forecast</a>
+                            <a class="nav-link" href="locationForcast.php">Location Forecast</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">Pricing</a>
+                            <a class="nav-link" href="pricing.php">Pricing</a>
                         </li>
                     </ul>
 
@@ -52,17 +52,17 @@
                             if (isset($_SESSION['username'])) {
                                 echo "Welcome, " . $_SESSION['username'];
                                 ?>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="logout.php">Sign Out</a>
-                                        </li>
-                                        <?php
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="logout.php">Sign Out</a>
+                                            </li>
+                                            <?php
                             } else {
                                 ?>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="login.html">Login</a>
-                                        </li>
-                                        <?php
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="login.html">Login</a>
+                                            </li>
+                                            <?php
                             }
                             ?>
                     </ul>
