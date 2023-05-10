@@ -52,17 +52,17 @@
                             if (isset($_SESSION['username'])) {
                                 echo "Welcome, " . $_SESSION['username'];
                                 ?>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="logout.php">Sign Out</a>
-                                        </li>
-                                        <?php
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="logout.php">Sign Out</a>
+                                            </li>
+                                            <?php
                             } else {
                                 ?>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="login.html">Login</a>
-                                        </li>
-                                        <?php
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="login.html">Login</a>
+                                            </li>
+                                            <?php
                             }
                             ?>
                     </ul>
