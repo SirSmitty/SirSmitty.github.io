@@ -6,7 +6,6 @@
 
 /* featured city bat on top */
 .featured {
-    padding-top: 20%;
     text-align: center;
 }
 
@@ -35,7 +34,9 @@
 }
 
 .article {
+    margin: 0.5rem;
     padding-top: 3rem;
+    background-color: white;
 }
 
 .body {
@@ -259,6 +260,10 @@ h1 {
 
 .addToCartButton:hover {
     background-color: #2c3e50;
+}
+
+main{
+    padding: 2rem;
 }
 
 /* Login page styles */
